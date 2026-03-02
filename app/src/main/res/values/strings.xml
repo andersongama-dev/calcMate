@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Calculadora</string>
+
+    <string name="hint_number_one">Digite o primeiro número</string>
+    <string name="hint_number_two">Digite o segundo número</string>
+    <string name="content_description_icon">A imagem apresenta um design moderno e simples, com quatro botões em formato de quadrado arredondado nas cores cinza claro e cinza escuro. Os símbolos exibidos são: menos (-), mais (+) e multiplicação (×). Sobrepostos na parte inferior direita, há um botão circular em destaque na cor verde/menta com o símbolo igual (=) em branco, indicando a ação principal de calcular o resultado.</string>
 </resources>
