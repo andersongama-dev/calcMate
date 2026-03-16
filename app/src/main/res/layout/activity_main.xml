@@ -46,7 +46,8 @@
                 android:id="@+id/TextInputNumberOne"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/hint_number_one" />
+                android:hint="@string/hint_number_one"
+                android:inputType="number|numberDecimal|numberSigned" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -60,7 +61,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#4D1616"
-                android:hint="@string/hint_number_two" />
+                android:hint="@string/hint_number_two"
+                android:inputType="number|numberDecimal|numberSigned" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <LinearLayout
