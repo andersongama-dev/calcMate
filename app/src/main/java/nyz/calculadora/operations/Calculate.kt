@@ -14,6 +14,9 @@ class Calculate {
     }
 
     fun div(n1: Double, n2: Double): Double {
+        if(n2 == 0.0) {
+            return 0.0
+        }
         return n1 / n2
     }
 }

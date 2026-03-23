@@ -26,13 +26,18 @@ class MainActivity : AppCompatActivity() {
     private val textInputNumberTwo by lazy { findViewById<TextInputEditText>(R.id.TextInputNumbeTwo) }
 
     private fun getValues(): Values {
-        val n1 = textInputNumberOne.text.toString().toDouble()
-        val n2 = textInputNumberTwo.text.toString().toDouble()
+        val n1Text = textInputNumberOne.text.toString()
+        val n2Text = textInputNumberTwo.text.toString()
 
-        if(!validate.isNull(n1, n2)) {
-            Toast.makeText(this, "Please enter both numbers", Toast.LENGTH_SHORT).show()
+        if(!validate.isNull(n1Text, n2Text)) {
+            textInputNumberOne.error = getString(R.string.error_required_fild)
+            textInputNumberTwo.error = getString(R.string.error_required_fild)
+            Toast.makeText(this, getString(R.string.error_required_fild), Toast.LENGTH_SHORT).show()
             return Values(value1 = 0.0, value2 = 0.0)
         }
+
+        val n1 = n1Text.toDouble()
+        val n2 = n2Text.toDouble()
 
         val values = Values(value1 = n1, value2 = n2)
 

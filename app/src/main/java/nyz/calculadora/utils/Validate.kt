@@ -1,10 +1,12 @@
 package nyz.calculadora.utils
 
 class Validate {
-    fun isNull(value1 : Double, value2 : Double): Boolean {
-        val value1Text = value1.toString()
-        val value2Text = value2.toString()
+    fun isNull(value1 : String, value2 : String): Boolean {
 
-        return !(value1Text.isBlank() || value2Text.isBlank())
+        if(value1.isBlank() || value2.isBlank()) {
+            return false
+        }
+
+        return true
     }
 }
