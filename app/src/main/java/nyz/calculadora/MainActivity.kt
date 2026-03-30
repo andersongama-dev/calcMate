@@ -15,7 +15,7 @@ import nyz.calculadora.utils.Validate
 
 class MainActivity : AppCompatActivity() {
 
-    private val calculate = Calculate() //function sum
+    /*private val calculate = Calculate() //function sum
     private val validate = Validate()
 
     //result
@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
         val values = Values(value1 = n1, value2 = n2)
 
         return values
-    }
+    } */
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         //click event sum
-        findViewById<Button>(R.id.ButtonSum).setOnClickListener {
+       /* findViewById<Button>(R.id.ButtonSum).setOnClickListener {
             val values = getValues()
             textViewResult.text = String.format("%s", calculate.sum(values.value1, values.value2))
         }//fim event
@@ -84,5 +84,8 @@ class MainActivity : AppCompatActivity() {
             val values = getValues()
             textViewResult.text = String.format("%s", calculate.div(values.value1, values.value2))
         }//fim event
+
+        */
+
     } //fim do onCreate
 } //fim da class
